@@ -5,7 +5,7 @@
     margin:0px;
 }
 
-/*바깥쪽 부터 안쪽으로 내부 여백을 줘서 정렬*/
+/*이미지 여백주는 방법 : 바깥쪽 부터 안쪽으로 내부 여백을 줘서 정렬*/
 .background {
     width : 1024px;
     height: 600px;
@@ -18,9 +18,6 @@
     height: 544px;
     background-image: url('../images/outerbox.png');
 }
-
-
-
 
 /* 
 이미지 여백주는 방법 : 내가 해본 방법
@@ -56,6 +53,11 @@
     border-radius: 10px;
     /* margin-left: 25px;
     margin-top: 30px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
 
 }
 
@@ -72,40 +74,95 @@
     font-size: 9px; /*css 상속*/
     width: 131px;
     height: 15px;
+    color: #55B2D4;
     
 }
-
-.wrapper__left_header__center {
-    width: 192px;
-    height: 21px;
-}
-
-.wrapper__left_header__right {
-    width: 83px;
-    height: 18px;
-}
-
-
-
-
 
 .wrapper__left__body {
     width: 100%;
     height: 100%;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 30px;
 }
+
+.left__body__header {
+   width: 100%;
+   /* display: flex;
+   flex-direction: column;
+   align-items: center;  */
+}
+
+
+.left__body__header__gray {
+    width: 148px;
+    height: 133px;
+    background-color: gray;
+    /* margin: auto auto; */
+}
+
+.left__body__header__line {
+    /* padding: auto auto; */
+    border-top: 1px dotted black;
+    margin: 12px 0px;
+}
+
+.left__body__profile {
+    font-size: 9px;
+    width: 100%;
+    height: 100%;
+    /* margin: auto 30px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 10px;
+}
+
+.left__body__footer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* margin: auto 30px; */
+    font-size: 11px;
+    font-style: 
+    Malgun Gothic;
+    color: #000000;
+}
+
+.left__body__footer > select {
+    margin-top: 5px;
+}
+
 
 .wrapper__right {
     width: 524px;
-    height: 472px;
-    background-color: aquamarine;
+    /* height: 472px; */
+    height: 100%;
+    background-color: bisque;
     /* margin-left: 25px;
     margin-top: 30px; */
-    
 }
 
-
 .wrapper__right__header {
+    padding-top: 7.5px;
+    font-size: 11px;
+    color: #55B2D4;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper__right__header > h4 {
+    display: inline-block;
+    padding-left: 40px;
+}
+
+.wrapper__right__header > span {
+    padding-right: 10px;
 }
