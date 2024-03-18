@@ -3,6 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입 폼</title>
+    <link href="../02-css/02-signup.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="child-div" id="child-div-title">
+            <h1>회원 가입을 위해 <br> 정보를 입력해주세요</h1>
+        </div>
+        <div class="child-div">
+            <label for="email">* 이메일</label>
+            <input class="em" type="text" name="email">
+        </div>
+        <div class="child-div">
+            <label for="name">* 이름</label>
+            <input class="nm"type="text" name="name">
+        </div>
+        <div class="child-div">
+            <label for="password">* 비밀번호</label>
+            <input class="pw" type="password" name="password">
+        </div>
+        <div class="child-div">
+            <label for="password_ok">* 비밀번호 확인</label>
+            <input class="pw" type="password" name="password_ok">
+        </div>
+        <div class="radio-container">
+            <div id="radio1">
+                <input type="radio" id="female" name="gender-female" value="여성">
+                <label for="gender-female">여성</label>
+            </div>
+            <div id="radio2">
+                <input type="radio" id="male" name="gender-male" value="남성">
+                <label for="gender-male">남성</label>
+            </div>
+            
+        </div>
+        <div class="checkbox-container">
+            <input type="checkbox" id="signin" name="signin" value="이용약관 개인정보 수집 및 동의">
+            <label for="signin">이용약관 개인정보 수집 및 동의</label>
+        </div>    
+        <div class="child-div">
+            <hr/>
+        </div>
+        <div>
+            <button>가입하기</button>
+        </div>
+    </div>
     <title>Document</title>
 </head>
 <body>
