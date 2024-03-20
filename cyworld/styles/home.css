@@ -31,24 +31,26 @@ html, body {
 .wrapper__header__title {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-end;
+    /* justify-content: flex-start; */
+    align-items: center;
 }
 
 .title {
     font-size: 13px;
     font-weight: 700px;
     font: Malgun Gothic;
-    line-height: 17.29px;
+    line-height: 2;
     color: #55B2D4;
 }
 
 .subtitle {
+    display: inline-block;
     font-size: 8px;
-    font-weight: 400px;
-    line-height: 8px;
+    font-weight: 700px;
+    line-height: 4;
     font: Sci Fied Bitmap;
-    padding-left: 10px;
+    padding-left: 5px;
+    padding-top: 3px;
     color: #000000;
 }
 
