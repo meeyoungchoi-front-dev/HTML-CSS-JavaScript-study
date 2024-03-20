@@ -5,6 +5,15 @@
     margin:0px;
 }
 
+html { 
+    background: url(../images/background.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
 /*이미지 여백주는 방법 : 바깥쪽 부터 안쪽으로 내부 여백을 줘서 정렬*/
 .background {
     width : 1024px;
@@ -38,7 +47,6 @@
    
 } */
 
-
 .wrapper {
     display: flex;
     flex-direction: row;
@@ -57,8 +65,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
-
 }
 
 .wrapper__left__header {
@@ -74,8 +80,7 @@
     font-size: 9px; /*css 상속*/
     width: 131px;
     height: 15px;
-    color: #55B2D4;
-    
+    color: #55B2D4;   
 }
 
 .wrapper__left__body {
@@ -96,7 +101,6 @@
    flex-direction: column;
    align-items: center;  */
 }
-
 
 .left__body__header__gray {
     width: 148px;
@@ -119,12 +123,14 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    
+    /* justify-content: flex-start; */
     padding-top: 10px;
 }
 
 .left__body__footer {
     width: 100%;
-    height: 100%;
+    /* height: 100%;
     display: flex;
     flex-direction: column;
     /* margin: auto 30px; */
@@ -138,31 +144,79 @@
     margin-top: 5px;
 }
 
+.wrapper__feel {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* margin: auto 30px; */
+    font-size: 11px;
+    font-style: 
+    Malgun Gothic;
+    color: #000000;
+}
+
+.feel__title {
+    color: gray;
+    font-size: 11px;
+}
 
 .wrapper__right {
     width: 524px;
-    /* height: 472px; */
-    height: 100%;
-    background-color: bisque;
+    height: 472px;
+    /* height: 100%; */
     /* margin-left: 25px;
     margin-top: 30px; */
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-left: 5px;
 }
 
 .wrapper__right__header {
-    padding-top: 7.5px;
-    font-size: 11px;
-    color: #55B2D4;
+    width: 510px;
+    /* padding-top: 7.5px; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
+    /* align-items: center;  */
+    padding: 2px 14px;
+    /* font-size: 11px;
+    color: #55B2D4; */
 }
 
-.wrapper__right__header > h4 {
+.rigth__header__title , .right__header__setting {
+    font-size: 9px;
+    color: #55B2D4;
+}
+
+.rigth__header__title {
+    font-size: 16px;
+}
+
+
+.wrapper__right__body {
+    width: 510px;
+    height: 445px;
+    border: 1px solid gray;
+    border-radius: 15px;
+    background-color: white;
+}
+
+/* .wrapper__right__header > h4 {
     display: inline-block;
     padding-left: 40px;
 }
 
 .wrapper__right__header > span {
     padding-right: 10px;
+} */
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
 }
