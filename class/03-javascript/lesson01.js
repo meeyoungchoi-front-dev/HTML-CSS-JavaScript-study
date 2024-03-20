@@ -52,3 +52,63 @@ maskingMail.push("*");
 // maskingMail에 @와 emailDomain을 연결시켜 최종 문자열을 만들어 준다
 let resultMail = maskingMail.join("") + "@" + emailDomain;
 console.log(resultMail);
+
+// 객체
+let friend = {name: "철수", 
+              age: 13, 
+              camp: "코드캠프"
+            }
+console.log(friend);
+
+// 객체에 담겨있는 값 가져오기
+console.log(friend.name);
+console.log(friend.age);
+console.log(friend.camp);
+console.log(friend.test); // 없는 키값을 꺼내려고 하면 undefiend
+
+// 배열에 담긴 객체
+let students = [
+    {name: "철수", age:13, school: "다람쥐초등학교"},
+    {name: "영희", pet:8, house: "공룔초등학교"},
+    {name: "훈이", pet:11, house: "거북이초등학교"}
+]
+
+console.log(students);
+
+// 객체가 배열에 담겨있기 때문에 인덱스를 활용해서 꺼내올 수 있다
+console.log(students[0]);
+console.log(students[1]);
+console.log(students[2]);
+
+
+// 배열에 담긴 객체의 특정 인덱스의 특정 key 가져오기
+console.log(students[0].school);
+
+// quiz
+const fruits = [
+                {number: 1 , title: "레드향"},
+                {number: 2, title: "샤인머스켓"},
+                {number: 3, title: "산청딸기"},
+                {number: 4, title: "한라봉"},
+                {number: 5, title: "사과"},
+                {number: 6, title: "애플망고"},
+                {number: 7, title: "딸기"},
+                {number: 8, title: "천혜향"},
+                {number: 9, title: "과일선물세트"},
+                {number: 10, title: "귤"}
+]
+
+const fruitstop10 = [];
+
+fruitstop10.push(fruits[0].number + " " + fruits[0].title);
+fruitstop10.push(fruits[1].number + " " + fruits[0].title);
+fruitstop10.push(fruits[2].number + " " + fruits[0].title);
+fruitstop10.push(fruits[3].number + " " + fruits[0].title);
+fruitstop10.push(fruits[4].number + " " + fruits[0].title);
+fruitstop10.push(fruits[5].number + " " + fruits[0].title);
+fruitstop10.push(fruits[6].number + " " + fruits[0].title);
+fruitstop10.push(fruits[7].number + " " + fruits[0].title);
+fruitstop10.push(fruits[8].number + " " + fruits[0].title);
+fruitstop10.push(fruits[9].number + " " + fruits[0].title);
+
+console.log(fruitstop10);
