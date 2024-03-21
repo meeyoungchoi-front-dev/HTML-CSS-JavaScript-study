@@ -55,7 +55,11 @@ html, body {
 }
 
 .wrapper__header__text {
-    padding-top: 10px;
+    /* padding-top: 10px; */
+    font-size: 11px;
+    line-height: 14.63px;
+    font-weight: 400px;
+    color: #999999;
 }
 
 .wrapper__header__text__line {
@@ -63,12 +67,12 @@ html, body {
     border-top: 2px solid #999999;
 }
 
-.wrapper__header__text > p {
+/* .wrapper__header__text > p {
     font-size: 11px;
     line-height: 14.63px;
     font-weight: 400px;
     color: #999999;
-}
+} */
 
 .wrapper__body {
     width: 100%;
