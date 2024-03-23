@@ -211,6 +211,8 @@ html {
 
 .rigth__header__title , .right__header__setting {
     font-size: 9px;
+    line-height: 24px;
+    font-family: PFStardust;
     color: #55B2D4;
 }
 
