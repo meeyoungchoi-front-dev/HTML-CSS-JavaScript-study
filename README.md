@@ -97,3 +97,10 @@
 ## 싸이월드 2일차 메인페이지 레이아웃 설계
 ### 결과화면
 ![alt text](image-3.png)
+
+## 싸이월드 3일차 GAME 페이지 레이아웃 설계
+### 결과화면
+![alt text](image-4.png)
+- 끝말잇기 게임 UI 추가
+- 로또번호 뽑기 UI 추가
+- side-button-tab 레이아웃 설계
