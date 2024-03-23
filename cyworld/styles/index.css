@@ -173,6 +173,7 @@ html {
 
 .wrapper__right__header {
     width: 510px;
+    height: auto;
     /* padding-top: 7.5px; */
     display: flex;
     flex-direction: row;
@@ -184,15 +185,24 @@ html {
     color: #55B2D4; */
 }
 
-.rigth__header__title , .right__header__setting {
-    font-size: 9px;
-    line-height: 24px;
+.right__header__title {
+    font-size: 16px;
+    line-height: 20px;
     font-family: PFStardust;
     color: #55B2D4;
 }
 
-.rigth__header__title {
-    font-size: 16px;
+.right__header__setting {
+    width: 83px;
+    height: 16px;
+    font-size: 9px;
+    line-height: 20px;
+    font-family: PFStardust;
+    font-weight: 500;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
 }
 
 .wrapper__right__body {
