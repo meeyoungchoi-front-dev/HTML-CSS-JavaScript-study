@@ -16,12 +16,12 @@ html, body {
     /* border: 1px solid black; */
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .body__header {
     width: 464px;
-    height: 250px;
+    height: 220px;
     /* border: 1px solid red; */
     padding: 20px 20px;
 }
@@ -47,7 +47,7 @@ html, body {
     border-top: 1px solid gray;
 }
 .musics {
-    margin-top: 10px;
+    margin-top: 5px;
     display: flex;
     flex-direction: row;
     align-items: center;
