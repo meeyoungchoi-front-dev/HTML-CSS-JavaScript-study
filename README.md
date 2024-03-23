@@ -24,3 +24,9 @@
 ### 결과화면
 ![alt text](image-5.png)
 ![alt text](image-6.png)
+
+## 싸이월드 쥬크박스 페이지 레이아웃 설계
+### 결과화면
+![alt text](image.png)
+- 추억의 앨범 UI 추가
+- 추억의 BGM UI 추가
