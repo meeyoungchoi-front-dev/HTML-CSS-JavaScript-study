@@ -18,28 +18,43 @@ button {
 .wrapper {
     width: 100%;
     height: 100%;
+    padding: 20px 30px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
 }
 
 .wrapper__header {
     width: 100%;
-    height: 48px;
-    padding: 20px 30px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
-.wrapper__header__title {
+.header__title {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
 }
 
+.game__container {
+    width: 222px;
+    height: 168px;
+    padding-top: 20px;
+    border: 1px solid gray;
+    background-color: #F6F6F6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+}
+
 .title {
+    display: inline-block;
+    width: 39px;
+    height: 17px;
+    margin-right: 5px;
     font-size: 13px;
     font-weight: 700;
     font-family: Malgun Gothic;
@@ -55,13 +70,13 @@ button {
     color: black;  
 }
 
-.wrapper__header__text__line {
+.divideLine {
     width: 100%;
-    margin-top: 10px;
+    margin-top: 3px;
     border-top: 1px solid #999999;
 }
 
-.wrapper__body {
+/* .wrapper__body {
     width: 100%;
     height: 100%;
     padding-left: 30px;
@@ -69,30 +84,18 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
+    justify-content: space-between;
+} */
 
-.game1, .game2 {
-    margin-bottom: 20px;
-    padding-top: 20px;
-    width: 222px;
-    height: 168px;
-    border: 1px solid gray;
-    background-color: #F6F6F6;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 15px;
-}
-
-.game1 {
+/* .game1 {
     margin-top: 10px;
-}
+} */
 
 #name {
     padding-top: 6px;
 }
 
-.input__wrapper {
+.word__text {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -110,7 +113,7 @@ input {
 }
 
 
-.game__name {
+.game__title {
     font-family: Malgun Gothic;
     font-size: 11px;
     font-weight: 800;
@@ -118,7 +121,7 @@ input {
     text-align: center;
 }
 
-.game__text {
+.game__subtitle {
     padding-top: 4px;
     font-family: Malgun Gothic;
     font-size: 10px;
@@ -128,15 +131,24 @@ input {
     color: #999999;
 }
 
-.input__wrapper , .result__wrapper {
+#word {
+    font-family: Malgun Gothic;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 14.63px;
+    text-align: center;
+    color: #999999;
+}
+
+.word__text , .result__wrapper {
     padding-top: 4px;
 }
 
-.input__wrapper {
+.word__text {
     margin-top: 10px;
 }
 
-.result {
+.word__result {
     padding-top: 10px;
     font-family: Malgun Gothic;
     font-size: 11px;
@@ -146,7 +158,7 @@ input {
     color: #999999;
 }
 
-.result__wrapper {
+.lotto__result {
     width: 130px;
     height: 26px;
     border: 2px solid black;
@@ -156,6 +168,7 @@ input {
     justify-content: space-around;
     align-items: center;
     border-radius: 4px;
+    margin-top: 3px;
 }
 
 .lotto__number {
