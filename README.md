@@ -30,3 +30,8 @@
 ![alt text](image.png)
 - 추억의 앨범 UI 추가
 - 추억의 BGM UI 추가
+
+## 서브메뉴 버튼 클릭시 iframe 변경
+- javascript addEventListener 적용
+- setAttribute 메서드를 활용하여 각 서브메뉴 버튼 클릭시 div 내부 iframe에 html 파일 변경되도록 설계
+- https://github.com/meeyoungchoi-front-dev/pre-codecamp/blob/e3e5500edd3bec691825ec27f62015fa292d23b7/cyworld/script/script.js
