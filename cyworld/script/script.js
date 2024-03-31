@@ -1,7 +1,7 @@
 window.addEventListener('load', function() {
-    let homeButton = document.getElementById('home');
-    let gameButton = document.getElementById('game');
-    let musicButton = document.getElementById('music');
+    const homeButton = document.getElementById('home');
+    const gameButton = document.getElementById('game');
+    const musicButton = document.getElementById('music');
 
     homeButton.addEventListener("click", homeButtonClick);
 
