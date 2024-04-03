@@ -5,7 +5,7 @@ window.addEventListener('load', function() {
 
     homeButton.addEventListener("click", homeButtonClick);
 
-    function homeButtonClick() {
+    function homeButtonClick(event) {
         document.getElementById("contentFrame").setAttribute("src", "home.html");
     }
 
