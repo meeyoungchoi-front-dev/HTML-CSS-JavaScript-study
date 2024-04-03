@@ -40,3 +40,24 @@ switch  (number % 2 ) {
         console.log('홀수');
         break;
 }
+
+// 반복문
+for (let i = 0; i < 5; i++) {
+    console.log(i);
+}
+
+for (i = 0; i < 19; i++) {
+    if (i === 7) {
+        break;
+    }
+
+    console.log(i);
+}
+
+for (i = 0; i < 19; i++) {
+    if (i === 7) {
+        continue;
+    }
+    
+    console.log(i);
+}
