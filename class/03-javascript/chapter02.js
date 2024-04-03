@@ -61,3 +61,24 @@ for (i = 0; i < 19; i++) {
     
     console.log(i);
 }
+
+const arr = [1,2,3];
+
+for (const i of arr) {
+    console.log(i);
+}
+
+// while
+i = 0;
+
+while (i < 10) {
+    console.log(i++);
+}
+
+// do while
+i = 0;
+do {
+    console.log(i++);
+} while (i < 10) {
+
+}
