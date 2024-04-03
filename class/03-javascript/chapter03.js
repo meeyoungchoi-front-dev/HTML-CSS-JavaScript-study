@@ -57,5 +57,37 @@ function plus(a, b) {
 }
 console.log(plus(10, 20));
 
+// 함수 표현식과 화살표 함수
+// 자바스크립트에서는 함수를 하나의 값으로 취급한다
+const plus = function (a, b) {
+    return a + b;
+}
 
+add(10, 20);
 
+// 화살표 함수
+// 함수 표현식보다 단순하고 간결한 문법으로 함수를 만들 수 있는 방법
+// 함수 표현식에서 function 키워드를 없애고 좀더 단순한 키워드로 바꾼것을 의미한다
+const sum = (a, b) => {
+    return a + b;
+}
+console.log(sum(10,20));
+
+// function hello() {
+//     console.log('Hello!');
+//     console.log('World!');
+// }
+
+const hello = () => {
+    console.log('Hello!');
+    console.log('World!');
+}
+
+hello();
+
+// function greeting(user) {
+//     console.log(`Hello, ${user}!`);
+// }
+
+const greeting = () => console.log(`Hello, ${user}!`);
+greeting('hong');
