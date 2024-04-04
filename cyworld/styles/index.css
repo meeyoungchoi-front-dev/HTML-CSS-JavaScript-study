@@ -252,18 +252,15 @@ html {
     line-height: 20px;
     text-align: center;
     background-color: white;
+    border-radius: 8%;
     border: none;
-    border-radius: 5%;
+    color: gray;
 }
 
-#home {
-    background-color: white;
+.side__wrapper__button:hover {
+    background-color: skyblue;
 }
 
-#game {
-    background-color: #55B2D4;
-}
-
-#music {
-    background-color: white;
+.side__wrapper__button.active {
+    background-color: gray;
 }
