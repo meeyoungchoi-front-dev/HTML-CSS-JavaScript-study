@@ -257,10 +257,7 @@ html {
     color: gray;
 }
 
-.side__wrapper__button:hover {
-    background-color: skyblue;
-}
-
-.side__wrapper__button.active {
+.active {
     background-color: gray;
+    color: white;
 }
