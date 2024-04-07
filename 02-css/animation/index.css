@@ -9,9 +9,8 @@
 }
 
 .container:hover img{
-    width: 500px;
     background-color: gray;
-    transform: rotateX(360deg);
+    transform: scale(4) rotateX(360deg);
 }
 
 img {
