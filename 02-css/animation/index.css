@@ -9,11 +9,24 @@
 }
 
 .container:hover img{
-    background-color: gray;
-    transform: scale(4) rotateX(360deg);
+    background-color: blanchedalmond;
+}
+
+@keyframes moving-logo {
+    0% {
+        transform: scale(1)
+    } 25% {
+        transform: scale(3) rotateY(360deg);
+    } 50% {
+        transform: scale(0.5)
+    } 75% {
+        transform: translateX(-100%);
+    } 100% {
+        transform: scale(1);
+    }
 }
 
 img {
     width: 100px;
-    transition: all 1s ease-in-out;
+    animation: moving-logo 2s infinite;
 }
