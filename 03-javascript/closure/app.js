@@ -41,8 +41,58 @@ function outerFunc() {
 outerFunc();
 
 
+function createCounter() {
+    let count = 0;
+    function increment() {
+        count +=1;
+        console.log(`Count increased to ${count}`);
+    }
+
+    function getCount() {
+        return count;
+    }
+
+    return {increment, getCount};
+};
+
+const counter = createCounter();
+counter.increment(); // 1
+counter.increment(); // 2
+counter.increment(); // 3
+
+console.log(`The current count is ${counter.getCount()}`);
 
 
+function createGame() {
+    let score = 0;
+
+    function increaseScore(points) {
+        score += points;
+        console.log(`+${points}pts`);
+    };
+
+    function descreseScore(points) {
+        score -= points;
+        console.log(`-${points}pts`);
+    };
+
+    function getScore() {
+        return score;
+    };
+
+    return {increaseScore, descreseScore, getScore};
+};
 
 
+const game = createGame();
 
+game.increaseScore(5);
+game.increaseScore(6);
+game.increaseScore(3);
+game.descreseScore(5);
+console.log(`The final score is ${game.getScore()}`);
+
+
+// 결론
+// 다른 함수의 내부에 정의된 함수로 내부 함수는 외부 함수의 변수와 범위에 액세스할 수 있다
+// 개인 변수 및 상태 유지를 허용 JS 프레임워크에서 자주 사용된다
