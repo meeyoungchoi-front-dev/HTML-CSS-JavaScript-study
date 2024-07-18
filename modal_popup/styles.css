@@ -1,0 +1,9 @@
+.popup {
+    width: 50vh;
+    height:400px;
+    background-color: aqua;
+    position: fixed;
+    display: inline-block;
+    margin-bottom: 50vh;
+    margin-left: 50vh;
+}
