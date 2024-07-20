@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 100px 300px;
+    grid-template-rows: 100px;
+    grid-auto-rows: 200px;
+}
+
+/*실무에서는 서버에서 실시간으로 배치해야 하는 과정이 더 많기 때문에 grid-auto-rows를 많이 활용한다*/
