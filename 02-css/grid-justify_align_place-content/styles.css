@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px;
+    justify-content: center; /* 수평방향 가운데 정렬*/
+    align-content: center;/*수직방향 정렬 단, container의 height 값이 꼭 지정되 있어야 한다*/;
+    place-content: center center; /*justify-content와 align-content를 한줄로 간단하게 표현할 수 있게 된다*/
+}
