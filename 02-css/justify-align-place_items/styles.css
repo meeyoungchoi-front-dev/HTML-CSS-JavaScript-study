@@ -11,10 +11,9 @@
     grid-template-rows: 100px 100px;
     align-items: center;
     justify-items: center;
-    place-items: center, end; align-items , justify-items
+    place-items: center, end; /*align-items, justify-content*/
 }
 
 .item {
     background-color: red;
 }
-
