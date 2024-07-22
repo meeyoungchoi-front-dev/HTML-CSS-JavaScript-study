@@ -1,0 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 50px 150px 300px; /*가로 크기*/
+    grid-template-rows: 100px 300px; /*세로(행) 크기*/
+}
