@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+}
+
+.image-grid {
+    --gap: 16px; /*변수화*/
+    --num-cols: 4; /*변수화*/
+    --row-height: 300px;
+    box-sizing: border-box;
+    padding: var(--gap);
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr); /*행*/
+    grid-auto-rows: var(--row-height);/*남는 열을 차지 */
+    gap: var(--gap);
+}
+
+sub {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /*이미지가 깨지지 않도록, 반응형을 만들때도 도움을 준다*/
+    background-color: blue;
+    color: white;
+}
+
+
+.image-grid-col-2 {
+    grid-column: span 4;
+}
+
+.image-grid-row-2 {
+    grid-row: span 4;
+}
+
+@media screen and (max-width: 1024px) {
+    .image-grid {
+        --num-cols: 2;
+        --row-height: 200px;
+    }    
+}

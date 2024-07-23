@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template: (5, 200px) / repeat(3 /200px);
+    grid-template-areas:
+    "subimage subimage subimage subimage subimage"
+    "mainimage";
+}
+
+.imagesContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+
+subimage {
+    width: 200px;
+    height: 200px;
+    grid-area: subimage;
+    background-color: green;
+}
+
+mainimage {
+    width: 600px;
+    height: 600px;
+    grid-area: mainimage;
+    background-color: blue;
+}
+
+
