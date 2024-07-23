@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 100px 200px 300px;
+    grid-auto-flow: column; /*그리드가 열축을 따라서 자동으로 배치되도록 만들준다*/
+    grid-auto-columns: 400px; /*그리드에 정의되지 않은 아이템이 열축으로 200px로 설정되도록 만들어준다*/
+}
+
+.item1 {
+    background-color: blue;
+}
+
+.item2 {
+    background-color: aqua;
+}
+
+.item3 {
+    background-color: purple;
+}
+
+.item4 {
+    background-color: brown;
+}
+
+.item5 {
+    background-color: blue;
+}
+
+.item6 {
+    background-color:orange;
+}
+
+.item7 {
+    background-color: pink;
+}
+
+.item8 {
+    background-color: gray;
+}
