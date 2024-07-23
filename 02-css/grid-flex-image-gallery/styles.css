@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    width: 800px;
+    height: 800px;
+    display: grid;
+    grid-template-columns: 100px 400px;
+}
+
+.mainImage {
+    margin-left: 20px;
+}
