@@ -1,0 +1,16 @@
+main {
+    width: 1000px;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+}
+
+topWrapper {
+    width: 800px;
+    height: 800px;
+    border: 1px solid red;
+    display: grid;
+    row-gap: 40px;
+    column-gap: 20px;
+    grid-template-columns: 200px 200px 200px 200px;
+}
