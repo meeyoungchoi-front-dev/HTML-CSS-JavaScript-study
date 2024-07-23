@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width:1000px;
+    height: 1000px;
+    display: flex;
+    flex-direction: row;
+    background-color: aqua;
+}
+
+.leftImages {
+    width: 500x;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+}
+
+imageDiv {
+    width: 250px;
+    height: 250px;
+    background-color: orange;
+}
+
+.rightImages {
+    width: 500px;
+    height: 500px;
+    background-color: blueviolet;
+}
