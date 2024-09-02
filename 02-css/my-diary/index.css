@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background: #eeeeee;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0; /*상하, 좌우*/
+}
+
+.wrapper {
+    width: 620px;
+    padding:  40px 30px;
+    height: 500px;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+.wrapper__head {
+    height: 160px;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+}
+
+.wrapper__head__title {
+    font-size: 32px;
+    background-color: orange;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.wrapper__line {
+    border-bottom: 1px dotted gray;
+    margin-bottom: 30px;
+}
+
+.wrapper__head__sub-title {
+    font-size: 18px;
+    padding: 10px 0;
+}
+
+#point {
+    display: block;
+    margin-top: 20px;
+    color: orange;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.wrapper__body {
+    border: 1px solid #dddddd;
+    padding: 20px 30px;
+}
+
+#content__title {
+    width: 500px;
+    height: 20px;
+    background-color: #f4f4f4;
+    color: black;
+    text-align: start;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+#kimchi {
+    color: red;
+}
+
+#cheese {
+    color: orange;
+}
+
+#highlight {
+    font-size: 22px;
+    color: blue;
+    font-weight: 700;
+    font-style: italic;
+}
+
+ .content__end {
+    display: block;
+}
+
+
+.diary_date {
+    color: #919191;
+    font-size: 14px;
+    text-align: right; 
+}
+
+.diary_date .content__end {
+    display: inline-block;
+    margin-left: 10px; /* 간격 추가 (선택 사항) */
+}
