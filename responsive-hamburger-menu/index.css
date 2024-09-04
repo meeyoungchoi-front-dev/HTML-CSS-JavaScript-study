@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.nav li {
+    margin: 0 15px;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    margin: 3px 0;
+}
+
+
+.sidebar {
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    left: -250px; /* 사이드바를 화면 밖으로 이동 */
+    top: 0;
+    background-color: #333;
+    transition: left 0.3s ease;
+    z-index: 1000;
+}
+
+.sidebar.active {
+    left: 0; /* 사이드바가 화면 안으로 이동 */
+}
+
+@media (max-width: 500px) {
+    .nav {
+        display: none; /* 가로 메뉴 숨김 */
+    }
+
+    .menu-toggle {
+        display: flex; /* 햄버거 메뉴 표시 */
+    }
+}
+
+@media (min-width: 501px) {
+    .sidebar {
+        display: none; /* 모바일 크기 이상에서는 사이드바 숨김 */
+    }
+}
