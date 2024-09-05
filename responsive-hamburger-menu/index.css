@@ -66,6 +66,18 @@ header {
     left: 0; /* 사이드바가 화면 안으로 이동 */
 }
 
+.close-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px; /* 버튼의 위쪽 위치 */
+    right: 10px; /* 버튼의 오른쪽 위치 */
+    z-index: 1001; /* 사이드바보다 위에 표시되도록 설정 */
+}
+
 @media (max-width: 500px) {
     .nav {
         display: none; /* 가로 메뉴 숨김 */

@@ -1,6 +1,11 @@
-const mobileMenu = document.getElementById('mobile-menu');
-const sidebar = document.getElementById('sidebar');
+const menuToggle = document.getElementById("mobile-menu");
+const sidebar = document.getElementById("sidebar");
+const closeBtn = document.getElementById("close-btn");
 
-mobileMenu.addEventListener('click', () => {
-    sidebar.classList.toggle('active');
+menuToggle.addEventListener("click", () => {
+    sidebar.classList.toggle("active"); 
+});
+
+closeBtn.addEventListener("click", () => {
+    sidebar.classList.remove("active"); 
 });
