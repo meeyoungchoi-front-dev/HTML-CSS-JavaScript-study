@@ -30,10 +30,11 @@ header {
 
 .nav li {
     margin: 0 15px;
+    color: white;
 }
 
 .nav a {
-    color: #fff;
+    color: rgb(24, 209, 39);
     text-decoration: none;
 }
 
@@ -52,12 +53,12 @@ header {
 
 
 .sidebar {
-    width: 250px;
+    width: 200px;
     height: 100%;
     position: fixed;
     left: -250px; /* 사이드바를 화면 밖으로 이동 */
     top: 0;
-    background-color: #333;
+    background-color: blue;
     transition: left 0.3s ease;
     z-index: 1000;
 }
@@ -78,6 +79,28 @@ header {
     z-index: 1001; /* 사이드바보다 위에 표시되도록 설정 */
 }
 
+.sidebar ul li a {
+    color: rgb(24, 209, 39);
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap; /* 줄 바꿈 활성화 */
+    justify-content: center; /* 가운데 정렬 */
+}
+
+.telephone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    flex: 1 0 21%; /* 기본적으로 한 줄에 4개 보이도록 설정 (여유 공간 고려) */
+}
+
+.telephone img {
+    max-width: 100%; /* 이미지가 부모의 너비를 초과하지 않도록 */
+}
+
 @media (max-width: 500px) {
     .nav {
         display: none; /* 가로 메뉴 숨김 */
@@ -86,10 +109,18 @@ header {
     .menu-toggle {
         display: flex; /* 햄버거 메뉴 표시 */
     }
+
+    .telephone {
+        flex: 1 0 100%; /* 한 줄에 하나씩 보이도록 */
+    }
 }
 
 @media (min-width: 501px) {
     .sidebar {
         display: none; /* 모바일 크기 이상에서는 사이드바 숨김 */
+    }
+
+    .telephone {
+        flex: 1 0 45%; /* 한 줄에 두 개씩 보이도록 (여유 공간 10% 고려) */
     }
 }
