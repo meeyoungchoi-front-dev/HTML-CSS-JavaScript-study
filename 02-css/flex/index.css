@@ -131,7 +131,7 @@ ul li {
         width: 400px; 
         height: 200px; /* 이미지 높이를 자동으로 설정하여 비율 유지 */
         background-color: green;
-        ext-align: center;
+        text-align: center;
         margin-bottom: 10px;
     }
 }
