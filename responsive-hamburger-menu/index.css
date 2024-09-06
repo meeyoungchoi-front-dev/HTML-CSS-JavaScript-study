@@ -2,9 +2,10 @@
     box-sizing: border-box;
 }
 
-body {
+html, body {
     font-family: Arial, sans-serif;
     margin: 0;
+    height: 100%;
 }
 
 header {
@@ -12,12 +13,20 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
+    margin-bottom: 0; /* 여백을 없애거나 원하는 값으로 수정 */
     background-color: #333;
     color: #fff;
+    position: fixed; /* 네비게이션 바를 고정 */
+    top: 0;
+    width: 100%;
+    z-index: 100; /* 다른 요소보다 위에 표시 */
 }
+
+
 
 .nav {
     display: flex;
+    margin-bottom: 20px;
 }
 
 .nav ul {
@@ -83,22 +92,26 @@ header {
     color: rgb(24, 209, 39);
 }
 
+.container {
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; /* 수평 가운데 정렬 */
+    height: 100%; /* 전체 높이 맞춤 */
+}
+
 .content {
     display: flex;
-    flex-wrap: wrap; /* 줄 바꿈 활성화 */
-    justify-content: center; /* 가운데 정렬 */
-}
-
-.telephone {
-    display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin: 10px;
-    flex: 1 0 21%; /* 기본적으로 한 줄에 4개 보이도록 설정 (여유 공간 고려) */
+    flex-wrap: wrap;
+    height: 400px; /* 컨텐츠 높이 설정 */
+    width: 600px; /* 컨텐츠 너비 설정 */
 }
 
-.telephone img {
-    max-width: 100%; /* 이미지가 부모의 너비를 초과하지 않도록 */
+img {
+    width: 300px;
 }
 
 @media (max-width: 500px) {
@@ -108,19 +121,39 @@ header {
 
     .menu-toggle {
         display: flex; /* 햄버거 메뉴 표시 */
+        flex-direction: column;
+        cursor: pointer;
     }
 
-    .telephone {
-        flex: 1 0 100%; /* 한 줄에 하나씩 보이도록 */
+    .carousel {
+        height: 200px; /* 화면 크기가 500px 이하일 때 높이를 200px로 줄임 */
+    }
+
+    .container {
+        width: 100%; /* 컨테이너 너비를 100%로 설정 */
+    }
+
+    .content {
+        display: flex;
+        flex-direction: row; /* 가로 방향으로 정렬 */
+        justify-content: center; /* 수평 가운데 정렬 */
+        align-items: center; /* 세로 가운데 정렬 */
+        flex-wrap: wrap; /* 줄바꿈 허용 */
+        height: auto; /* 높이를 자동으로 설정하여 이미지 높이에 맞춤 */
+        width: 100%; /* 너비를 100%로 설정 */
+        margin-top: 60px; /* nav 영역 높이만큼 여백 추가 */
+    }
+
+    img {
+        width: 45%; /* 이미지 너비를 45%로 설정하여 두 줄로 배치 */
+        height: auto; /* 이미지 높이를 자동으로 설정하여 비율 유지 */
+        margin: 2%; /* 이미지 간격 설정 */
+        object-fit: contain; /* 이미지 비율 유지 */
     }
 }
 
 @media (min-width: 501px) {
     .sidebar {
         display: none; /* 모바일 크기 이상에서는 사이드바 숨김 */
-    }
-
-    .telephone {
-        flex: 1 0 45%; /* 한 줄에 두 개씩 보이도록 (여유 공간 10% 고려) */
     }
 }
